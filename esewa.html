@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSewa Integration</title>
+</head>
+<body>
+    <h1>eSewa Payment Integration</h1>
+    <form method="POST" action="esewa/process_esewa.php">
+        <label for="amount">Enter Amount:</label>
+        <input type="number" name="amount" id="amount" required> 
+        <!-- put the input for test only -->
+        <!-- if the test is successful, then you can put the input hidden -->
+        <!-- and using php change the value like this -->
+        <!-- <input type="hidden" name="amount" value="<?php echo $amount; ?>"id="amount" required> -->
+
+
+
+
+        <button type="submit">Pay with eSewa</button>
+    </form>
+</body>
+</html>
